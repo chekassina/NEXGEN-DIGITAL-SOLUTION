@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-brand-blue: #0A84FF;
+  --color-brand-cyan: #00D4FF;
+  --color-brand-navy: #091522;
+  --color-brand-gray: #9CA3AF;
+  --color-brand-light: #F2F4F7;
+  --color-brand-dark: #0D1B2A;
+}
+
+@layer base {
+  body {
+    @apply bg-brand-dark text-white font-sans antialiased;
+  }
+}
+
+.font-black {
+  font-family: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  font-weight: 900;
+}
+
+.font-extrabold {
+  font-family: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  font-weight: 800;
+}
+
+.font-bold {
+  font-family: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  font-weight: 700;
+}
+
+.glow-text {
+  text-shadow: 0 0 20px rgba(0, 212, 255, 0.4);
+}
+
+.card-gradient {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+}
+
+.card-gradient:hover {
+  background: rgba(255, 255, 255, 0.05);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px -10px rgba(10, 132, 255, 0.3);
+  border-color: rgba(10, 132, 255, 0.3);
+}
+
+.text-gradient {
+  background: linear-gradient(to right, #0A84FF, #00D4FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}

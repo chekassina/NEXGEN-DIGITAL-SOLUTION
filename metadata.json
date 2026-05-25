@@ -1,0 +1,6 @@
+{
+  "name": "NEXGEN Digital Solutions",
+  "description": "Professional digital agency website for NEXGEN Digital Solutions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
